@@ -3,5 +3,5 @@ let iAm = 'я'
 let krasavchik = "красавчик!";
 //Выведи в консоль «Я красавчик!».
 // Обрати внимание: «Я» с заглавной.
-iAm = iAm.toLocaleUpperCase();
+iAm = iAm.toUpperCase();
 console.log(`${iAm} ${krasavchik}`);
