@@ -24,5 +24,5 @@ function deepClone(oldObj) {
 
 getNewPassport.address.city = "Bobryisk";
 
-console.log(passportWithAddress);
-console.log(getNewPassport);
+console.log(passportWithAddress.address.city);
+console.log(getNewPassport.address.city);
