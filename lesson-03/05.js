@@ -20,7 +20,7 @@ const users2 = [
 ];
 
 const newObj = {
-    id: 11,
+    id: 4,
     user: 'Ivan',
     surName: 'Susanin',
     address: 'Unknown'
