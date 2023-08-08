@@ -4,16 +4,28 @@ var numbers = [
     [11, 20, 33, 40, 55],
     [111, 200, 333, 400, 555],
 ];
-
-function getR(arr) {
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = 0; j < arr[i].length;j++) {
-            if ((arr[i][j] % 2) !== 0) {
-                delete arr[i][j];
-            }
+var newAr = [
+    [0, 0],
+    [0, 0],
+    [0, 0],
+];
+for (let i = 0; i < numbers.length; i++) {
+    for (let j = 0; j < numbers[i].length; j++) {
+        if (numbers[i][j] === 2) {
+            newAr[0][0] = numbers[i][j];
+        } else if (numbers[i][j] === 4) {
+            newAr[0][1] = numbers[i][j];
+        } else if (numbers[i][j] === 20) {
+            newAr[1][0] = numbers[i][j];
+        } else if (numbers[i][j] === 40) {
+            newAr[1][1] = numbers[i][j];
+        } else if (numbers[i][j] === 200) {
+            newAr[2][0] = numbers[i][j];
+        } else if (numbers[i][j] === 400) {
+            newAr[2][1] = numbers[i][j];
         }
-        console.log(arr);
     }
 }
 
-getR(numbers);
+numbers = newAr;
+console.log(numbers);
